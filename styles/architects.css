@@ -1,11 +1,97 @@
 /* font styles */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-body{
-    font-family: "Work Sans", sans-serif;
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* shared style */
+.display-flex {
+  display: flex;
+}
+
+.dark-01 {
+  color: rgb(19, 19, 19);
+}
+.dark-02 {
+  color: rgb(66, 66, 66);
+}
+.dark-03 {
+  color: rgb(114, 114, 114);
+}
+.bg-color {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-primary {
+  border-radius: 8px;
+  background: rgb(255, 144, 14);
+  width: 180px;
+  height: 64px;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* header styles */
+
+/* navbar related styles */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 3rem;
+}
+/* banner related styles */
+.banner-content {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.banner-description {
+  margin-bottom: 2rem;
+}
+.banner-image {
+  width: 100%;
+}
+
+
+/* responsive */
+@media screen and (max-width:576px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+    .brand{
+        text-align: center;
+        width: 350px;
+        margin-bottom: 30px;
+    }
 }
